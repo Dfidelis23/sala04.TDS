@@ -26,4 +26,21 @@ function divisao(){
         resposta.textContent = "Não se divide por 0"
     }
 }
+//arrow function 
+const media = () => {
+    var numero1 = parseFloat(document.getElementById("m1").value)
+    var numero2 = parseFloat(document.getElementById("m2").value)
+    var numero3 = parseFloat(document.getElementById("m3").value)
+    var numero4 = parseFloat(document.getElementById("m4").value)
+    var numero5 = parseFloat(document.getElementById("m5").value)
+    var media =  document.getElementById('media')
+    media.innerHTML = (numero1 + numero2 + numero3 + numero4 + numero5) / 5
+    var resposta = (numero1 + numero2 + numero3 + numero4 + numero5) / 5
+    if( resposta >= 7){
+        media.style.color = 'green'
+    }else{
+        media.style.color = 'red'
+    }
+    
+}
 
